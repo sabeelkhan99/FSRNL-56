@@ -1,0 +1,6 @@
+1.Read about
+
+1. <strong> vs <b> tag
+2. <i> vs <em> tag
+
+2. Revise whatever we have discussed so far.
