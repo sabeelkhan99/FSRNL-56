@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Form</h1>
+
+    <form action="/api/users" method="GET">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" name="myusername" id="username" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="mypassword" placeholder="Password" required>
+            </div>
+         </fieldset>
+         <fieldset>
+            <legend>Education Info</legend>
+            <div>
+                <label for="file">Graduation Certificate</label>
+                <input type="file" name="file" id="file">
+            </div>
+         </fieldset>
+        <button>Login</button>
+    </form>
+
+    <h2>Google Search Hijack</h2>
+
+    <!-- https://www.google.com/search?q=pizzas -->
+
+    <form action="https://www.google.com/search" method="GET">
+        <div>
+            <label for="search">Search</label>
+            <input type="text" name="q" id="search" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </form>
+
+    <h2>Youtube Search Hijack: Homework</h2>
+
+
+    
+</body>
+</html>
