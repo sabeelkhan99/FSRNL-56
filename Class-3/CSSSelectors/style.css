@@ -1,0 +1,123 @@
+/* Element Selector */
+
+h1{
+    color: palevioletred;
+    border: 2px solid black;
+}
+
+div{
+    color: orange;
+}
+
+/* Universal Selectors */
+
+*{
+    border: 1px solid gray;
+}
+
+/* Id Selector */
+
+#heading-3{
+    color: red;
+}
+
+/* Class Selector */
+
+.fav-movie{
+    color: purple;
+    font-weight: bold;
+}
+
+
+/* Descendent Selector */
+
+/* This simply means strong tag which is inside of paragraph */
+p strong{
+    border: 2px solid blue;
+}
+
+ul a{
+    color: green;
+    font-size: 30px;
+}
+
+
+/* Attribute Selector */
+
+input[type="text"]{
+    background-color: lightblue;
+}
+
+a[href="http://facebook.com"]{
+    color: lightseagreen;
+    font-size: 25px;
+}
+
+/* Pseudo Selectors */
+
+section{
+    height: 150px;
+    width: 150px;
+    border: 3px solid black;
+    background-color: lightcoral;
+}
+
+section:hover{
+    background-color: lightgreen;
+    border: 3px solid red;
+}
+
+button{
+    font-size: 30px;
+}
+
+button:active{
+    background-color: lightpink;
+}
+
+a:visited{
+    color: red;
+}
+
+p::first-letter{
+    font-size: 30px;
+    color: lightseagreen;
+}
+
+/* Adjacent Selector */
+
+h4+p{
+    font-style: italic;
+    text-decoration: overline;
+}
+
+
+/* Structural Pseudo Classes */
+article ol li:first-child{
+    color: magenta;
+}
+
+
+article ol li:last-child{
+    color: magenta;
+}
+
+article ol li:nth-of-type(4){
+    color: green;
+}
+
+/* Expression of the form An+B */
+/* article ol li:nth-of-type(3n+2){
+    color:brown;
+    font-weight: bold;
+} */
+
+/* article ol li:nth-of-type(odd){
+    color:brown;
+    font-weight: bold;
+} */
+
+/* article ol li:nth-of-type(even){
+    color:brown;
+    font-weight: bold;
+} */
