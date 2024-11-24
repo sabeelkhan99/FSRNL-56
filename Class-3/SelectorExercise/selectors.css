@@ -54,7 +54,9 @@ body{
 
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
 
-
+div:nth-of-type(3) p:nth-of-type(2){
+    border: 3px solid red;
+}
 
 
 /* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/

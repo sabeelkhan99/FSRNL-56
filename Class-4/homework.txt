@@ -1,0 +1,14 @@
+********************************************** Assignment 1 *********************************************
+
+1. Solve atleast 5 Problems from the below sheets - Solve 50 in Total
+ https://www.geeksforgeeks.org/explore?page=4&category=Mathematical&difficulty=Basic&sortBy=submissions
+
+2. Border and Background (HW)
+    i.https://developer.mozilla.org/en-US/docs/Web/CSS/border
+    ii. https://developer.mozilla.org/en-US/docs/Web/CSS/background
+3. Text Properties (HW) : Google fonts
+    i.https://developer.mozilla.org/en-US/docs/Web/CSS/font
+
+4. Create Flipkart like fixed navbar
+
+5. Read about sticky position
