@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(244, 232, 232);
+}
+
+#brand-name{
+    font-size: 1.6rem;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+#banner-section{
+    background-image: url('./assets/img/main.jpg');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner-section h1{
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#banner-section h2{
+    text-align: center;
+    color: white;
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+
+#banner-section button{
+    display: block;
+    margin: 30px auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #006ba6;
+    color: white;
+}
+
+#destination-section{
+    width: 90vw;
+    margin: 40px auto;
+}
+
+#destination-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#destination-grid figure{
+    height: 340px;
+    width: 370px;
+    padding: 10px;
+}
+
+#destination-grid figure img{
+    height: 100%;
+    width: 100%;
+}
+
+.small{
+    flex-basis: 30%;
+}
+
+.large{
+    flex-basis: 70%;
+}
+
+@media screen and (width<= 950px) {
+    .small,.large{
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (width<= 650px) {
+    .small,.large{
+        flex-basis: 100%;
+    }
+}
+
+#destination-section h3{
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+#destination-section p{
+    text-align: center;
+}
+
+
+#destination-section hr{
+    width: 30vw;
+    height: 10px;
+    background-color: #006ba6;
+    margin: 10px auto;
+    border: none;
+}
+
+#banner-section-text{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+@keyframes fadeIn {
+    100%{
+        opacity: 1;
+    }
+}

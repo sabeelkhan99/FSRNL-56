@@ -1,0 +1,30 @@
+h1{
+    font-size: 7rem;
+    text-align: center;
+    color: purple;
+}
+
+p{
+    font-size: 2rem;
+    color: orange;
+}
+/* 
+@media screen and (width<= 850px){
+    h1{
+        font-size: 5rem;
+        color: lightgreen;
+    }
+}
+
+@media screen and (width<= 620px){
+    h1{
+        font-size: 3rem;
+        color: lightskyblue;
+    }
+} */
+/* 
+@media screen and (orientation: portrait) {
+    section{
+        background-color: lightgrey;
+    }
+} */
