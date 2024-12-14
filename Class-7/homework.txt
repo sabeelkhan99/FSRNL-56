@@ -1,0 +1,6 @@
+Read about the below methods
+1. includes
+2. indexOf
+3. concat
+4. slice
+5. splice
