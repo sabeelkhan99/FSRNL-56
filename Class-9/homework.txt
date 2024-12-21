@@ -1,0 +1,16 @@
+Read About below Array methods
+
+1. find
+2. findIndex
+3. some
+4. sort
+5. reverse
+6. keys
+7. values
+8. flat
+
+
+Classes in Javascript
+
+Bonus
+1. Prototypes - Secret Life of Objects

@@ -1,7 +1,7 @@
 1. Declarative vs Imperative
    - We should adopt declarative way of writing code.
 
-2. 
+2. Your code should peel like onion
 
 
 
