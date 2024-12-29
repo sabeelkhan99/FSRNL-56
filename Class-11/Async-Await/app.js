@@ -6,21 +6,30 @@ async function fetchProfile(username) {
     return profile;
 }
 
-// 3 ms 
-
-async function fetchProfilesByUsernames(usernames) {
+// Parellel Code
+async function fetchProfilesByUsernamesOptimised(usernames) {
     const promiseList = [];
     for (let username of usernames) {
         promiseList.push(fetchProfile(username));
     }
-    const result = await Promise.all(promiseList); // 3.4 ms
+    const result = await Promise.all(promiseList);
     return result;
+}
+
+// Series
+async function fetchProfilesByUsernames(usernames) {
+    const res = [];
+    for (let username of usernames) {
+        const product = await fetchProfile(username);
+        res.push(product);
+    }
+    return res;
 }
 
 async function main() {
     console.time('timer');
     const usernames = ['sabeelkhan99', 'anand22981','MAbdurahman','Avipriya02'];
-    const profileList = await fetchProfilesByUsernames(usernames);
+    const profileList = await fetchProfilesByUsernamesOptimised(usernames);
     console.log(profileList);
     console.timeEnd('timer');
 }
