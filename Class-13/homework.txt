@@ -1,0 +1,7 @@
+Functional Requirement
+
+1. Create todo
+2. Delete todo
+3. Move up
+4. Move down
+5. Mark todo completed
