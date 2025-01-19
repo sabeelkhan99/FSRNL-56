@@ -1,0 +1,20 @@
+.form{
+   
+}
+
+.form input{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form button{
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+}
