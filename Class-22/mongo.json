@@ -1,0 +1,15 @@
+{
+    "id": "231768429",
+    "name": "Max",
+    "hobbies": ["Gym","Cricket"],
+    "favMovies": [
+        {
+            "name": "Spiderman",
+            "director": "ABC"
+        },
+        {
+            "name": "Spiderman",
+            "director": "ABC"
+        }
+    ]
+}
