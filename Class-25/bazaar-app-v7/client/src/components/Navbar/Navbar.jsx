@@ -24,7 +24,7 @@ const drawerWidth = 240;
 const Navbar = (props) => {
 
     const cartContext = useContext(CartContext);
-    const { isLoggedIn, logout } = useContext(UserContext);
+    const { isLoggedIn, logout, user } = useContext(UserContext);
 
     const { window } = props;
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -103,6 +103,15 @@ const Navbar = (props) => {
                         Bazaar
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        {isLoggedIn && user && <Button component={Link} to="/profile" sx={{ color: '#fff' }}>
+                            {user.username}
+                        </Button>
+                        }
+
+                        {isLoggedIn && user && user.role==='SELLER' && <Button component={Link} to="/new" sx={{ color: '#fff' }}>
+                            Add Product
+                        </Button>
+                        }
                         <Button component={Link} to="/" sx={{ color: '#fff' }}>
                             Products
                         </Button>

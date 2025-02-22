@@ -3,10 +3,15 @@ import mongoose from 'mongoose';
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
-        unique: true
+        unique: true,
+        index: true
     },
     password: String,
-    email: String
+    email: String,
+    role: {
+        type: String,
+        enum: ['SELLER', 'BUYER', 'ADMIN'],
+    }
 }, { timestamps: true, versionKey: false });
 
 

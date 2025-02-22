@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router';
+import { RadioGroup, FormControlLabel, Radio } from '@mui/material';
 
 const SignUp = () => {
 
@@ -18,11 +19,12 @@ const SignUp = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-
+      
         const newUser = {
             username: data.get('username'),
             password: data.get('password'),
             email: data.get('email'),
+            role: data.get('role')
         }
 
         axios.post('http://localhost:1234/register', newUser)
@@ -86,6 +88,13 @@ const SignUp = () => {
                         label="email"
                         name="email"
                     />
+                    <RadioGroup
+                        aria-labelledby="radio-buttons-group-label"
+                        name="role"
+                    >
+                        <FormControlLabel value="seller" control={<Radio />} label="Seller" />
+                        <FormControlLabel value="buyer" control={<Radio />} label="Buyer" />
+                    </RadioGroup>
                     <Button
                         type="submit"
                         fullWidth
