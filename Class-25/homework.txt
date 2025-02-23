@@ -1,0 +1,2 @@
+1. Create a show products page displaying all info about the product such as review etc.
+2. Create a add new product form
