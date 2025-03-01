@@ -51,7 +51,7 @@ const ShowProduct = () => {
                     />
                 </Grid>
                 <Grid item size={{ xs: 12, md: 6, lg: 6 }}>
-                    <Typography variant="h4">Add a review</Typography>
+                    <Typography variant="h6">Add a review</Typography>
                     <ReviewForm productId={id} fetchReview={fetchReview} />
                     {
                         reviews.map((item) => {
