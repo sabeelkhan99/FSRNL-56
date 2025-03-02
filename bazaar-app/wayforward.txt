@@ -1,0 +1,2 @@
+1. JOI - For data validation.
+2. API Security : DOS, DDOS, XSS, SQL/Mongo Injection
